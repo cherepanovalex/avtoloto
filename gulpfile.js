@@ -79,7 +79,10 @@ gulp.task('export', function(){
     .pipe(gulp.dest('dist/fonts'));
 
   let BuildImg = gulp.src('app/img/**/*.*')
-    .pipe(gulp.dest('dist/img'));   
+    .pipe(gulp.dest('dist/img'));
+
+  let BuildImages = gulp.src('app/images/**/*.*')
+      .pipe(gulp.dest('dist/images'));
 });
 
 gulp.task('watch', function(){

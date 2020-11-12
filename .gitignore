@@ -1,0 +1,11 @@
+app/
+node_modules/
+temp/
+build/
+*.sublime-workspace
+*.lnk
+.sass-cache
+.DS_Store
+.Thumbs
+.tmp/
+.build/

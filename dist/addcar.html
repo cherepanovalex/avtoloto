@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta id="vp" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Автолото</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+
+<body>
+
+<div class="modal fade thanksPop" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="title"> Заявка успешно отправлена!</div>
+                <div class="text">Наш менеджер перезвонит Вам в ближайшее время!</div>
+                <button type="button" class="button" data-dismiss="modal">ОК</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="wrap">
+
+    <header>
+        <div class="container">
+
+            <div class="mobile-menu-block">
+                <ul class="header-lang">
+                    <li><a href="#">KZ</a></li>
+                    <li class="active"><a href="#">RU</a></li>
+                </ul>
+
+                <div class="header-cabinet">
+                    <ul>
+                        <li><a href="#">Вход</a></li>
+                        <li><a href="#">Регистрация</a></li>
+                    </ul>
+                </div>
+
+                <ul class="header-menu">
+                    <li><a href="#">Инструкции</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Карьера</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+
+                <div class="header-rules">
+                    <div class="title">Правила участия в лотерее:</div>
+                    <ul>
+                        <li><a href="#">Classic</a></li>
+                        <li><a href="#">Economy</a></li>
+                        <li><a href="#">Express</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="menu-ico visible-for-small-only">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="header-top-line">
+                <ul class="header-lang">
+                    <li><a href="#">KZ</a></li>
+                    <li class="active"><a href="#">RU</a></li>
+                </ul>
+                <ul class="header-menu">
+                    <li><a href="#">Инструкции</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Карьера</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <div class="header-tel">
+                    <a href="tel: 88000805200">8 800 080 5200</a>
+                </div>
+                <ul class="header-social-links">
+                    <li><a href="#" class="fb-ico"></a></li>
+                    <li><a href="#" class="vk-ico"></a></li>
+                    <li><a href="#" class="odn-ico"></a></li>
+                    <li><a href="#" class="inst-ico"></a></li>
+                </ul>
+            </div>
+            <div class="header-mid-line">
+                <a href="#" class="logo">
+                    <img src="img/logo-desk.png" alt="">
+                </a>
+                <div class="header-rules">
+                    <div class="title">Правила участия в лотерее:</div>
+                    <ul>
+                        <li><a href="#">Classic</a></li>
+                        <li><a href="#">Economy</a></li>
+                        <li><a href="#">Express</a></li>
+                    </ul>
+                </div>
+                <div class="header-cabinet">
+                    <div class="title">Личный кабинет</div>
+                    <ul>
+                        <li><a href="#">Вход</a></li>
+                        <li><a href="#">Регистрация</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li><a href="#">Главная</a> /</li>
+                <li class="active"><a href="#">Разместить автомобиль</a></li>
+            </ul>
+
+
+            <h1>РАЗМЕСТИТЬ АВТОМОБИЛЬ ДЛЯ РОЗЫГРЫША</h1>
+            <div class="add-mobile-section">
+                <div class="add-item-row">
+                    <div class="item-name">Марка:</div>
+                    <div class="item-options">
+                        <select class="item-select">
+                            <option>Выберите марку</option>
+                            <option>Toyota</option>
+                            <option>BMW</option>
+                            <option>Mercedes</option>
+                            <option>Huyndai</option>
+                            <option>Mitsubishi</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="add-item-row">
+                    <div class="item-name">Модель:</div>
+                    <div class="item-options">
+                        <select class="item-select disabled">
+                            <option>Выберите модель</option>
+                            <option>Land Cruiser</option>
+                            <option>Camry</option>
+                            <option>Corolla</option>
+                            <option>Highlander</option>
+                            <option>Rav 4</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="add-item-row">
+                    <div class="item-name">Год выпуска:</div>
+                    <div class="item-options">
+                        <input type="number" class="item-input">
+                        <span>г.</span>
+                    </div>
+                </div>
+                <div class="add-item-row">
+                    <div class="item-name">Тип коробки:</div>
+                    <div class="item-options">
+                        <select class="item-select">
+                            <option>Выберите тип коробки</option>
+                            <option>Механическая</option>
+                            <option>Автомат</option>
+                            <option>Типтроник</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="add-item-row">
+                    <div class="item-name">Объем двигателя:</div>
+                    <div class="item-options">
+                        <input type="number" class="item-input">
+                        <span>л.</span>
+                    </div>
+                </div>
+                <div class="add-item-row">
+                    <div class="item-name">Топливо:</div>
+                    <div class="item-options">
+                        <ul class="choise-type-list">
+                            <li>
+                                <div class="circle-check">
+                                    <input id="radio-id1_1" type="radio" name="type1" value="1" checked="">
+                                    <label for="radio-id1_1">
+                                        <span>Бензин</span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="circle-check">
+                                    <input id="radio-id1_2" type="radio" name="type1" value="1">
+                                    <label for="radio-id1_2">
+                                        <span>Дизель</span>
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="add-item-row">
+                    <div class="item-name">Руль:</div>
+                    <div class="item-options">
+                        <ul class="choise-type-list">
+                            <li>
+                                <div class="circle-check">
+                                    <input id="radio-id2_1" type="radio" name="type2" value="1" checked="">
+                                    <label for="radio-id2_1">
+                                        <span>Слева</span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="circle-check">
+                                    <input id="radio-id2_2" type="radio" name="type2" value="1">
+                                    <label for="radio-id2_2">
+                                        <span>Справа</span>
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="add-item-row">
+                    <div class="item-name">Растаможен в Казахстане:</div>
+                    <div class="item-options">
+                        <ul class="choise-type-list">
+                            <li>
+                                <div class="circle-check">
+                                    <input id="radio-id3_1" type="radio" name="type3" value="1" checked="">
+                                    <label for="radio-id3_1">
+                                        <span>Да</span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="circle-check">
+                                    <input id="radio-id3_2" type="radio" name="type3" value="1">
+                                    <label for="radio-id3_2">
+                                        <span>Нет</span>
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="add-item-row align-top">
+                    <div class="item-name">Характеристики:</div>
+                    <div class="item-options">
+
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="check-column">
+                                    <ul class="check-type-list">
+                                        <li>
+                                            <input type="checkbox" id="ch1" checked="">
+                                            <label for="ch1">Подогрев сидений</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="ch2">
+                                            <label for="ch2">Иммобилайзер</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="ch3">
+                                            <label for="ch3">Подогрев зеркал</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="ch4">
+                                            <label for="ch4">Подогрев руля</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="ch5">
+                                            <label for="ch5">Полный электропакет</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="ch6">
+                                            <label for="ch6">Кожаный салон</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="ch7">
+                                            <label for="ch7">Велюровый салон</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="ch8">
+                                            <label for="ch8">Ксенон</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="ch9">
+                                            <label for="ch9">Парктроники</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="check-column">
+                                    <ul class="check-type-list">
+                                        <li>
+                                            <input type="checkbox" id="ch10" checked="">
+                                            <label for="ch10">DVD, MP3, Bluetooth</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="ch11">
+                                            <label for="ch11">Электросиденья</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="ch12">
+                                            <label for="ch12">Климат-контроль</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="ch13">
+                                            <label for="ch13">Кондиционер</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="ch14">
+                                            <label for="ch14">Обдув сидений</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="ch15">
+                                            <label for="ch15">Пуш-старт</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="ch16">
+                                            <label for="ch16">Бортовой компьютер</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="ch17">
+                                            <label for="ch17">Литые диски</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="ch18">
+                                            <label for="ch18">Тонировка</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="check-column">
+                                    <ul class="check-type-list">
+                                        <li>
+                                            <input type="checkbox" id="ch19" checked="">
+                                            <label for="ch19">DVD, MP3, Bluetooth</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="ch20">
+                                            <label for="ch20">Электросиденья</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="ch21">
+                                            <label for="ch21">Климат-контроль</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="ch22">
+                                            <label for="ch22">Кондиционер</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="ch23">
+                                            <label for="ch23">Обдув сидений</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="ch24">
+                                            <label for="ch24">Пуш-старт</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="ch25">
+                                            <label for="ch25">Бортовой компьютер</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="ch26">
+                                            <label for="ch26">Литые диски</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="ch27">
+                                            <label for="ch27">Тонировка</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="add-item-row align-top">
+                    <div class="item-name">
+                        Фото автомобиля:
+                        <div class="sub-name">До 30 файлов, размер одного
+файла не более 2 Мб</div>
+                    </div>
+                    <div class="item-options">
+                        <ul class="car-added-list">
+                            <li class="add-item">
+                                <label for="upload-car" class="upload-car">Добавить файл</label>
+                                <input type="file" class="upload-file" name="file" id="upload-car" />
+                            </li>
+                            <li>
+                                <img src="images/car.jpg">
+                                <button type="button">X</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="add-item-row">
+                    <div class="item-name">Файл с оценкой авто:</div>
+                    <div class="item-options">
+                        <div class="add-car-file">
+                            <label for="upload-car-file" class="upload-car-file">Прикрепить файл</label>
+                            <input type="file" class="upload-file" name="file" id="upload-car-file" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="add-item-row">
+                    <div class="item-name">Телефон владельца:</div>
+                    <div class="item-options">
+                        <input type="tel" name="tel" class="item-input tel-mask" autocomplete="off" data-role="input" data-required="" placeholder="+7 (___) ___-__-__" data-inputmask="'alias':'phone', 'mask':'+7 (999) 999-99-99', 'placeholder': '_'" inputmode="numeric" required="">
+                    </div>
+                </div>
+
+
+                <div class="controls">
+                    <a href="#" class="add-button">
+                    <span class="text">
+                        РАЗМЕСТИТЬ АВТОМОБИЛЬ
+                    </span>
+                    </a>
+                </div>
+
+
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-3">
+                    <a href="#" class="footer-logo">
+                        <img src="img/logo-small.png" width="148" height="75">
+                    </a>
+                </div>
+                <div class="col-lg-5 col-md-3">
+                    <ul class="footer-menu">
+                        <li><a href="#">Инструкции</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Карьера</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+
+                    <div class="co">
+                        © 2020 AvtoLoto
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="location-address">
+                        <span class="location-info">
+                            Казахстан, г Алматы, А21В8Р1, проспект Нұрсұлтан Назарбаев, 28 а
+                        </span>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3">
+                    <div class="tel">
+                        <a href="tel: 88000805200"> 8 800 080 5200</a>
+                    </div>
+                    <ul class="footer-social-links">
+                        <li><a href="#" class="fb-ico"></a></li>
+                        <li><a href="#" class="vk-ico"></a></li>
+                        <li><a href="#" class="odn-ico"></a></li>
+                        <li><a href="#" class="inst-ico"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="js/countdown.js"></script>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/jquery.inputmask.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/simplethumbs.min.js"></script>
+
+<script src="js/libs.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

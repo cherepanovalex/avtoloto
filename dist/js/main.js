@@ -56,6 +56,29 @@ $(function () {
         }
     });
 
+
+
+    //******открытие таблицы
+    $('.faq-acc-item .faq-acc-title').on('click', function (e) {
+        e.preventDefault();
+        if ($(this).parent('.faq-acc-item').hasClass('open')) {
+            $(this).parent('.faq-acc-item').removeClass('open')
+            $(this).parent().find('.faq-acc-info').slideUp()
+        } else {
+            $(this).parent().find('.faq-acc-info').slideDown()
+            $(this).parent('.faq-acc-item').addClass('open')
+        }
+    });
+
+
+    /*car gallery*/
+    $(document).ready(function() {
+        $('#thumbnails').simplethumbs({
+            slideshow: '#imageview',
+        });
+    });
+
+
     var $modal = $("#myModal");
 
     $("form").each(function() {

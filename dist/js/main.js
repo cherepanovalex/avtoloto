@@ -56,6 +56,55 @@ $(function () {
         }
     });
 
+    /*слайдер photos*/
+    $('.photo-gallery .owl-carousel').owlCarousel({
+        loop:true,
+        margin:35,
+        nav:true,
+        navText: [],
+        autoplay: true,
+        responsive:{
+            0:{
+                items:1,
+                margin:0
+            },
+            768:{
+                items:3,
+                margin:5
+            },
+            1280:{
+                items:3
+            },
+            1440:{
+                items:4
+            }
+        }
+    });
+
+    /*слайдер photos*/
+    $('.review-section .owl-carousel').owlCarousel({
+        loop:true,
+        margin:35,
+        nav:true,
+        navText: [],
+        autoplay: true,
+        responsive:{
+            0:{
+                items:1,
+                margin:0
+            },
+            768:{
+                items:2,
+                margin:5
+            },
+            1280:{
+                items:2
+            },
+            1440:{
+                items:2
+            }
+        }
+    });
 
 
     //******открытие таблицы
